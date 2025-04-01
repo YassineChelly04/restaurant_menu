@@ -190,9 +190,33 @@
             </fieldset>
             <input type="submit" value="Go To Checkout">
         </form>
+        <script>
+            window.onload = function() {
+                // Add IDs to sections
+                document.querySelector('.menu-items').id = 'menu';
+                document.querySelector('section:nth-of-type(2)').id = 'orderform';
+                
+                // Convert nav h2s to links
+                document.querySelector('#menu').addEventListener('click', function() {
+                    document.getElementById('menu').scrollIntoView({ behavior: 'smooth' });
+                });
+                
+                document.querySelector('#orderform').addEventListener('click', function() {
+                    document.getElementById('orderform').scrollIntoView({ behavior: 'smooth' });
+                });
+                
+                // Create proper nav links
+                const nav = document.querySelector('nav');
+                nav.innerHTML = `
+                    <a href="#menu"><h2>Menu</h2></a>
+                    <a href="#orderform"><h2>Order Form</h2></a>
+                `;
+            }
+            </script>
         <footer>
             <p>Made with ❤️ by @chellyyassine</p>
         </footer>
     </section>
+    
 </body>
 </html>
