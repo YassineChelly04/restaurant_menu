@@ -1,222 +1,243 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Cheeselove</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            padding: 20px;
-        }
-        h2 {
-            text-align: center;
-            color: #333;
-        }
-        form {
-            max-width: 600px;
-            margin: 0 auto;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-        label {
-            font-size: 16px;
-            margin-bottom: 8px;
-            display: block;
-            color: #555;
-        }
-        input[type="number"],
-        textarea {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 15px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            box-sizing: border-box;
-        }
-        textarea {
-            height: 100px;
-        }
-        fieldset {
-            border: none;
-            margin-bottom: 20px;
-        }
-        legend {
-            font-size: 18px;
-            color: #333;
-            margin-bottom: 10px;
-        }
-        input[type="checkbox"] {
-            margin-right: 8px;
-        }
-        .checkbox-label {
-            font-size: 16px;
-            color: #555;
-        }
-        button {
-            display: block;
-            width: 100%;
-            padding: 10px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #45a049;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-        nav h2 {
-            cursor: pointer;
-        }
-        section.menu-items {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-        }
-        .menu-item {
-            width: 30%;
-            text-align: center;
-        }
-        .menu-item img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover delicious cheese-inspired dishes at Cheeselove restaurant. Order online for pickup or delivery.">
+    <meta name="keywords" content="cheese, restaurant, pizza, pasta, food delivery">
+    <meta property="og:title" content="Cheeselove - Delicious Menu">
+    <meta property="og:description" content="Enjoy our selection of cheese-inspired dishes. Order online now!">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630?text=Cheeselove+Restaurant">
+    <meta property="og:url" content="https://cheeselove.com">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <title>Cheeselove - Delicious Menu</title>
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/3132/3132693.png" type="image/x-icon">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <nav>
-        <h2 id="menu">Menu</h2>
-        <h2 id="orderform">Order Form</h2>
-    </nav>
-
-    <section class="menu-items">
-        <div class="menu-item">
-            <img src="https://www.saporinostri.it/wp-content/uploads/2020/10/le-origini-della-pizza-napoletana-e1601990439881-1024x604.jpg" alt="Pizza">
-            <h3>Pizza</h3>
-            <p>Classic cheese favorite. <i>TND 10.00</i></p>
+    <!-- Sticky Header -->
+    <header class="sticky-header">
+        <div class="logo">
+            <img src="img1.png" alt="Cheeselove Logo">
         </div>
-        <div class="menu-item">
-            <img src="https://www.rejospices.be/img/recipes/3284/1-medium_default.jpg" alt="Tagliatelli">
-            <h3>Tagliatelli</h3>
-            <p>Fresh pasta ribbons. <i>TND 12.00</i></p>
+        <nav>
+            <a href="#menu-section"><h2>Menu</h2></a>
+            <a href="#order-form"><h2>Order Form</h2></a>
+        </nav>
+    </header>
+
+    <div class="page-container">
+        <!-- Left Sidebar (Categories) -->
+        <aside class="sidebar left-sidebar">
+            <h3>Categories</h3>
+            <ul class="category-list">
+                <li><a href="#pizza">Pizza</a></li>
+                <li><a href="#pasta">Pasta</a></li>
+                <li><a href="#sandwiches">Sandwiches</a></li>
+                <li><a href="#chicken">Chicken</a></li>
+                <li><a href="#tacos">Tacos</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main>
+            <section id="menu-section" class="menu-items">
+                <h2>Our Menu</h2>
+                <!-- Pizza Category -->
+                <div id="pizza" class="category-section">
+                    <h3 class="category-title">Pizza</h3>
+                    <div class="menu-item">
+                        <img src="https://www.saporinostri.it/wp-content/uploads/2020/10/le-origini-della-pizza-napoletana-e1601990439881-1024x604.jpg" alt="Pizza">
+                        <h3>Pizza</h3>
+                        <p>Classic cheese favorite. <i>TND 10.00</i></p>
+                    </div>
+                </div>
+
+                <!-- Pasta Category -->
+                <div id="pasta" class="category-section">
+                    <h3 class="category-title">Pasta</h3>
+                    <div class="menu-item">
+                        <img src="https://www.rejospices.be/img/recipes/3284/1-medium_default.jpg" alt="Tagliatelli">
+                        <h3>Tagliatelli</h3>
+                        <p>Fresh pasta ribbons. <i>TND 12.00</i></p>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://assets.bonappetit.com/photos/656f48d75b552734225041ba/16:9/w_5056,h_2844,c_limit/20231120-WEB-Lasanga-6422.jpg" alt="Lasagna">
+                        <h3>Lasagna</h3>
+                        <p>Layers of pasta and cheese. <i>TND 13.00</i></p>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://www.spicebangla.com/wp-content/uploads/2024/08/Spicy-Pasta-recipe-optimised-scaled.webp" alt="Pasta">
+                        <h3>Pasta</h3>
+                        <p>Served al dente with sauce. <i>TND 9.00</i></p>
+                    </div>
+                </div>
+
+                <!-- Tacos Category -->
+                <div id="tacos" class="category-section">
+                    <h3 class="category-title">Tacos</h3>
+                    <div class="menu-item">
+                        <img src="https://raisscook.com/wp-content/uploads/2022/10/french-tacos-3.jpg" alt="French Tacos">
+                        <h3>French Tacos</h3>
+                        <p>Loaded with savory fillings. <i>TND 9.50</i></p>
+                    </div>
+                </div>
+
+                <!-- Sandwiches Category -->
+                <div id="sandwiches" class="category-section">
+                    <h3 class="category-title">Sandwiches</h3>
+                    <div class="menu-item">
+                        <img src="https://tapcom-live.ams3.cdn.digitaloceanspaces.com/media/principale-di-nino/products/chicken-caesar-panuzzo-placeholder" alt="Panuzzo">
+                        <h3>Panuzzo</h3>
+                        <p>Soft bread stuffed with cheese. <i>TND 8.75</i></p>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://www.tunisienumerique.com/wp-content/uploads/2020/03/makloub-1200x800.jpg" alt="Makloub">
+                        <h3>Makloub</h3>
+                        <p>Flavorful folded sandwich. <i>TND 7.00</i></p>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://static.wixstatic.com/media/7565d3_bf8d945cbf794240bfd234e1ab3a32e0~mv2.jpg/v1/fill/w_568,h_758,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/7565d3_bf8d945cbf794240bfd234e1ab3a32e0~mv2.jpg" alt="Sandwich">
+                        <h3>Sandwich</h3>
+                        <p>Quick bite on the go. <i>TND 6.50</i></p>
+                    </div>
+                </div>
+
+                <!-- Chicken Category -->
+                <div id="chicken" class="category-section">
+                    <h3 class="category-title">Chicken</h3>
+                    <div class="menu-item">
+                        <img src="https://www.maggi.ph/sites/default/files/srh_recipes/daf62ae8e9c2ffd5a32165d769f46628.jpg" alt="Fried Chicken">
+                        <h3>Fried Chicken</h3>
+                        <p>Crispy and juicy. <i>TND 11.00</i></p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="order-form">
+                <h2>Place Your Order</h2>
+                <form>
+                    <div class="order-grid">
+                        <div class="order-items"></div>
+                            <h3>Select Your Items</h3>
+                            <div class="order-item">
+                                <img
+                                    src="https://www.saporinostri.it/wp-content/uploads/2020/10/le-origini-della-pizza-napoletana-e1601990439881-1024x604.jpg"
+                                    alt="Pizza"
+                                    style="width: 80px; height: 50px; object-fit: cover; border-radius: 8px;"
+                                />
+                                <div class="item-details">
+                                    <h4>Pizza</h4>
+                                    <p><i>TND 10.00</i></p>
+                                </div>
+                                <div class="quantity-control">
+                                    <button type="button" class="qty-btn minus">-</button>
+                                    <input type="number" name="pizzaQty" value="0" min="0" class="qty-input" />
+                                    <button type="button" class="qty-btn plus">+</button>
+                                </div>
+                            </div>
+                            <div class="order-item">
+                                <img
+                                    src="https://www.rejospices.be/img/recipes/3284/1-medium_default.jpg"
+                                    alt="Tagliatelli"
+                                    style="width: 80px; height: 50px; object-fit: cover; border-radius: 8px;"
+                                />
+                                <div class="item-details">
+                                    <h4>Tagliatelli</h4>
+                                    <p><i>TND 12.00</i></p>
+                                </div>
+                                <div class="quantity-control">
+                                    <button type="button" class="qty-btn minus">-</button>
+                                    <input type="number" name="tagliatelliQty" value="0" min="0" class="qty-input" />
+                                    <button type="button" class="qty-btn plus">+</button>
+                                </div>
+                            </div>
+                            <!-- Additional menu items here -->
+                        </div>
+
+                        <div class="order-details">
+                            <h3>Order Details</h3>
+                            <div class="addons-section">
+                                <h4>Customize Your Order</h4>
+                                <div class="addon-options">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="extraCheese" />
+                                        <span>Extra Cheese</span>
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="extraSauce" />
+                                        <span>Extra Sauce</span>
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="spicyOption" />
+                                        <span>Make it Spicy</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="special-requests">
+                                <label for="specialRequests">Special Requests:</label>
+                                <textarea
+                                    id="specialRequests"
+                                    name="specialRequests"
+                                    placeholder="Any special instructions for your order..."
+                                ></textarea>
+                            </div>
+                            <input type="submit" value="Place Order" />
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <!-- Right Sidebar (Order Summary) -->
+        <aside class="sidebar right-sidebar" style="width: 20%; align-self: center;">
+            <h3>Your Order</h3>
+            <div class="order-summary">
+            <p>Subtotal: TND 0.00</p>
+            <p>Tax: TND 0.00</p>
+            <p>Total: TND 0.00</p>
+            <button>Checkout</button>
+            </div>
+        </aside>
         </div>
-        <div class="menu-item">
-            <img src="https://raisscook.com/wp-content/uploads/2022/10/french-tacos-3.jpg" alt="French Tacos">
-            <h3>French Tacos</h3>
-            <p>Loaded with savory fillings. <i>TND 9.50</i></p>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="https://via.placeholder.com/120x80?text=Cheeselove" alt="Cheeselove Logo">
+                <p class="slogan">"Where Every Bite Tells a Cheesy Story"</p>
+            </div>
+            <div class="footer-hours">
+                <h3>Hours</h3>
+                <p>Monday - Friday: 11:00 AM - 10:00 PM</p>
+                <p>Saturday & Sunday: 10:00 AM - 11:00 PM</p>
+                <p>Holidays: 12:00 PM - 9:00 PM</p>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Cheese Avenue, Dairy District</p>
+                <p><i class="fas fa-phone"></i> +216 71 234 567</p>
+                <p><i class="fas fa-envelope"></i> info@cheeselove.com</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
         </div>
-        <div class="menu-item">
-            <img src="https://tapcom-live.ams3.cdn.digitaloceanspaces.com/media/principale-di-nino/products/chicken-caesar-panuzzo-placeholder" alt="Panuzzo">
-            <h3>Panuzzo</h3>
-            <p>Soft bread stuffed with cheese. <i>TND 8.75</i></p>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Cheeselove Restaurant. All rights reserved.</p>
         </div>
-        <div class="menu-item">
-            <img src="https://www.tunisienumerique.com/wp-content/uploads/2020/03/makloub-1200x800.jpg" alt="Makloub">
-            <h3>Makloub</h3>
-            <p>Flavorful folded sandwich. <i>TND 7.00</i></p>
-        </div>
-        <div class="menu-item">
-            <img src="https://static.wixstatic.com/media/7565d3_bf8d945cbf794240bfd234e1ab3a32e0~mv2.jpg/v1/fill/w_568,h_758,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/7565d3_bf8d945cbf794240bfd234e1ab3a32e0~mv2.jpg" alt="Sandwich">
-            <h3>Sandwich</h3>
-            <p>Quick bite on the go. <i>TND 6.50</i></p>
-        </div>
-        <div class="menu-item">
-            <img src="https://www.maggi.ph/sites/default/files/srh_recipes/daf62ae8e9c2ffd5a32165d769f46628.jpg" alt="Fried Chicken">
-            <h3>Fried Chicken</h3>
-            <p>Crispy and juicy. <i>TND 11.00</i></p>
-        </div>
-        <div class="menu-item">
-            <img src="https://assets.bonappetit.com/photos/656f48d75b552734225041ba/16:9/w_5056,h_2844,c_limit/20231120-WEB-Lasanga-6422.jpg" alt="Lasagna">
-            <h3>Lasagna</h3>
-            <p>Layers of pasta and cheese. <i>TND 13.00</i></p>
-        </div>
-        <div class="menu-item">
-            <img src="https://www.spicebangla.com/wp-content/uploads/2024/08/Spicy-Pasta-recipe-optimised-scaled.webp" alt="Pasta">
-            <h3>Pasta</h3>
-            <p>Served al dente with sauce. <i>TND 9.00</i></p>
-        </div>
-    </section>
-
-    <section>
-        <h2>Place Your Order</h2>
-        <form>
-            <label for="pizzaQty">Pizza:</label>
-            <input type="number" id="pizzaQty" name="pizzaQty" min="0"><br>
-
-            <label for="tagliatelliQty">Tagliatelli:</label>
-            <input type="number" id="tagliatelliQty" name="tagliatelliQty" min="0"><br>
-
-            <label for="frenchTacosQty">French Tacos:</label>
-            <input type="number" id="frenchTacosQty" name="frenchTacosQty" min="0"><br>
-
-            <label for="panuzzoQty">Panuzzo:</label>
-            <input type="number" id="panuzzoQty" name="panuzzoQty" min="0"><br>
-
-            <label for="makloubQty">Makloub:</label>
-            <input type="number" id="makloubQty" name="makloubQty" min="0"><br>
-
-            <label for="sandwishQty">Sandwich:</label>
-            <input type="number" id="sandwishQty" name="sandwishQty" min="0"><br>
-
-            <label for="friedChickenQty">Fried Chicken:</label>
-            <input type="number" id="friedChickenQty" name="friedChickenQty" min="0"><br>
-
-            <label for="lasagnaQty">Lasagna:</label>
-            <input type="number" id="lasagnaQty" name="lasagnaQty" min="0"><br>
-
-            <label for="pastaQty">Pasta:</label>
-            <input type="number" id="pastaQty" name="pastaQty" min="0"><br>
-
-            <label for="specialRequests">Special Requests:</label><br>
-            <textarea id="specialRequests" name="specialRequests"></textarea><br>
-
-            <fieldset>
-                <legend>Add-ons</legend>
-                <label for="extraCheese" class="checkbox-label">Extra Cheese</label>
-                <input type="checkbox" id="extraCheese" name="extraCheese"><br>
-
-                <label for="extraSauce" class="checkbox-label">Extra Sauce</label>
-                <input type="checkbox" id="extraSauce" name="extraSauce">
-            </fieldset>
-            <input type="submit" value="Go To Checkout">
-        </form>
-        <script>
-            window.onload = function() {
-                // Add IDs to sections
-                document.querySelector('.menu-items').id = 'menu';
-                document.querySelector('section:nth-of-type(2)').id = 'orderform';
-                
-                // Convert nav h2s to links
-                document.querySelector('#menu').addEventListener('click', function() {
-                    document.getElementById('menu').scrollIntoView({ behavior: 'smooth' });
-                });
-                
-                document.querySelector('#orderform').addEventListener('click', function() {
-                    document.getElementById('orderform').scrollIntoView({ behavior: 'smooth' });
-                });
-                
-                // Create proper nav links
-                const nav = document.querySelector('nav');
-                nav.innerHTML = `
-                    <a href="#menu"><h2>Menu</h2></a>
-                    <a href="#orderform"><h2>Order Form</h2></a>
-                `;
-            }
-            </script>
-        <footer>
-            <p>Made with ❤️ by @chellyyassine</p>
-        </footer>
-    </section>
-    
+    </footer>
 </body>
 </html>
